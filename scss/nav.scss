@@ -1,0 +1,67 @@
+#cover{
+    height: 700px;
+    background-image: linear-gradient(rgb(210,210,210,0.6), rgb(210,210,210,0.6)), url(../img/laptop_hero.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    //border-radius: 0 0 10% 10%;
+
+    .nav-wrapper{
+        display: flex;
+        justify-content: end;
+
+        
+        nav{
+            padding-top: 20px;
+            height: 50px;
+            width: auto;
+
+            a{
+                padding: 50px 50px;
+                font-size: 18px;
+                text-decoration: none;
+                font-family: PTBold;
+                color: #1B1212;
+                position: relative;
+            }
+
+            
+            a:after{
+                content: "";
+                position: absolute;
+                background-color: #FDEC00;
+                height: 3px;
+                width: 0;
+                left: 15px;
+                bottom: 40px;
+                transition: .5s;
+            }
+
+            a:hover{
+                color: #FDEC00;
+            }
+          
+            a:hover:after{
+                width: 80%;
+            }
+
+        }
+    }
+
+    .info{
+        margin: 150px auto;
+        width: 900px;
+        font-family: PTReg;
+        font-size: 32px;
+        font-style: italic;
+        text-align: center;
+        
+        h2{
+            color: #1B1212;
+            letter-spacing: 5px;
+            word-spacing: 10px;
+            font-size: 60px;
+        }
+        
+    }
+}

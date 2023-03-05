@@ -1,0 +1,104 @@
+#cover {
+  height: 700px;
+  background-image: linear-gradient(rgba(210, 210, 210, 0.6), rgba(210, 210, 210, 0.6)), url(../img/laptop_hero.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#cover .nav-wrapper {
+  display: flex;
+  justify-content: end;
+}
+#cover .nav-wrapper nav {
+  padding-top: 20px;
+  height: 50px;
+  width: auto;
+}
+#cover .nav-wrapper nav a {
+  padding: 50px 50px;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: PTBold;
+  color: #1B1212;
+  position: relative;
+}
+#cover .nav-wrapper nav a:after {
+  content: "";
+  position: absolute;
+  background-color: #FDEC00;
+  height: 3px;
+  width: 0;
+  left: 15px;
+  bottom: 40px;
+  transition: 0.5s;
+}
+#cover .nav-wrapper nav a:hover {
+  color: #FDEC00;
+}
+#cover .nav-wrapper nav a:hover:after {
+  width: 80%;
+}
+#cover .info {
+  margin: 150px auto;
+  width: 900px;
+  font-family: PTReg;
+  font-size: 32px;
+  font-style: italic;
+  text-align: center;
+}
+#cover .info h2 {
+  color: #1B1212;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  font-size: 60px;
+}
+
+#content {
+  height: 100%;
+  margin: 70px auto;
+  text-align: center;
+}
+#content h2 {
+  font-size: 40px;
+  font-family: PTBold;
+}
+#content .portfolio_content {
+  margin: auto;
+  width: 1100px;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#content .portfolio_content img {
+  width: 500px;
+  height: 300px;
+  float: left;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: GillsBold;
+  src: url(../css/fonts/GillSansBold.otf);
+}
+@font-face {
+  font-family: PTBold;
+  src: url(../css/fonts/PTSerif-Bold.ttf);
+}
+@font-face {
+  font-family: PTReg;
+  src: url(../css/fonts/PTSerif-Regular.ttf);
+}
+
+/*# sourceMappingURL=styles.css.map */
