@@ -149,6 +149,9 @@ h1, h2, h3, h4, h5, h6, p {
   padding-top: 20px;
   border-top: #AD974F dashed 3px;
 }
+#contact p {
+  width: 1500px;
+}
 
 #footer {
   background-color: black;
