@@ -1,0 +1,30 @@
+#about{
+    font-family: LexReg;
+    height: 60%;
+    padding-top: 5px;
+    border-top: #AD974F dashed 3px;
+
+
+    img{
+        height: 450px;
+        width: 600px;
+        float: left;
+        margin-top: 15px;
+    }
+
+    .aboutContent{
+        width: 900px;
+        float: right;
+
+        h1{
+            padding-top: 40px;
+        }
+        
+        p{
+            padding-top: 50px;
+            line-height: 30px;
+        }
+
+        
+    }
+}

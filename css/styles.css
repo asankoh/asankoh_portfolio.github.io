@@ -4,6 +4,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: LexReg;
 }
 #cover .nav-wrapper {
   display: flex;
@@ -25,7 +26,7 @@
 #cover .nav-wrapper nav a:after {
   content: "";
   position: absolute;
-  background-color: #FDEC00;
+  background-color: #AD974F;
   height: 3px;
   width: 0;
   left: 15px;
@@ -33,7 +34,7 @@
   transition: 0.5s;
 }
 #cover .nav-wrapper nav a:hover {
-  color: #FDEC00;
+  color: #AD974F;
 }
 #cover .nav-wrapper nav a:hover:after {
   width: 80%;
@@ -41,7 +42,6 @@
 #cover .info {
   margin: 150px auto;
   width: 900px;
-  font-family: PTReg;
   font-size: 32px;
   font-style: italic;
   text-align: center;
@@ -54,16 +54,16 @@
 }
 
 #content {
-  height: 100%;
+  height: 120%;
   margin: 70px auto;
   text-align: center;
+  font-family: LexReg;
 }
 #content h2 {
   font-size: 40px;
-  font-family: PTBold;
 }
 #content .portfolio_content {
-  margin: auto;
+  margin: 30px auto;
   width: 1100px;
   height: 300px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -72,6 +72,22 @@
   width: 500px;
   height: 300px;
   float: left;
+}
+#content .portfolio_content h3 {
+  padding-top: 20px;
+}
+#content .portfolio_content button {
+  height: 45px;
+  width: 250px;
+  margin-top: 30px;
+  border-radius: 43px;
+  color: black;
+  background-color: #AD974F;
+  box-shadow: 0px 7px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#content .portfolio_content ol ul {
+  padding: 5px;
 }
 
 * {
@@ -99,6 +115,50 @@ h1, h2, h3, h4, h5, h6, p {
 @font-face {
   font-family: PTReg;
   src: url(../css/fonts/PTSerif-Regular.ttf);
+}
+@font-face {
+  font-family: LexReg;
+  src: url(../css/fonts/LexendDeca-Regular.ttf);
+}
+#about {
+  font-family: LexReg;
+  height: 60%;
+  padding-top: 5px;
+  border-top: #AD974F dashed 3px;
+}
+#about img {
+  height: 450px;
+  width: 600px;
+  float: left;
+  margin-top: 15px;
+}
+#about .aboutContent {
+  width: 900px;
+  float: right;
+}
+#about .aboutContent h1 {
+  padding-top: 40px;
+}
+#about .aboutContent p {
+  padding-top: 50px;
+  line-height: 30px;
+}
+
+#contact {
+  height: 70%;
+  padding-top: 20px;
+  border-top: #AD974F dashed 3px;
+}
+
+#footer {
+  background-color: black;
+  height: 40px;
+}
+#footer i {
+  float: right;
+  font-size: 24px;
+  padding: 10px 50px;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -4,7 +4,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    //border-radius: 0 0 10% 10%;
+    font-family: LexReg;
 
     .nav-wrapper{
         display: flex;
@@ -29,7 +29,7 @@
             a:after{
                 content: "";
                 position: absolute;
-                background-color: #FDEC00;
+                background-color: #AD974F;
                 height: 3px;
                 width: 0;
                 left: 15px;
@@ -38,7 +38,7 @@
             }
 
             a:hover{
-                color: #FDEC00;
+                color: #AD974F;
             }
           
             a:hover:after{
@@ -51,7 +51,6 @@
     .info{
         margin: 150px auto;
         width: 900px;
-        font-family: PTReg;
         font-size: 32px;
         font-style: italic;
         text-align: center;
