@@ -1,20 +1,23 @@
 #about{
-    font-family: LexReg;
-    height: 60%;
+    display: flex;
+    font-family: Qsand_M;
+    height: 80%;
     padding-top: 5px;
-    border-top: #AD974F dashed 3px;
+    border-top: 1px dotted #fdfdfc;
+    background-color: rgb(40, 41, 43);
 
 
     img{
         height: 450px;
         width: 600px;
-        float: left;
         margin-top: 15px;
     }
 
-    .aboutContent{
-        width: 900px;
-        float: right;
+    .aboutContent{ 
+        justify-content: flex-end;
+        width: 700px;
+        padding-left: 30px;
+        color: #fdfdfc;
 
         h1{
             padding-top: 40px;

@@ -1,32 +1,53 @@
 #cover{
-    height: 700px;
-    background-image: linear-gradient(rgb(210,210,210,0.6), rgb(210,210,210,0.6)), url(../img/laptop_hero.png);
+    height: 100%;
+    background-image: linear-gradient(rgb(41,40,43), rgb(41,40,43)), url(../img/halftone_pattern.avif);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: LexReg;
-
-    .nav-wrapper{
-        display: flex;
-        justify-content: end;
 
         
         nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding-top: 20px;
-            height: 50px;
+            height: 70px;
             width: auto;
 
+            .logo{
+                height: 100%;
+                 width: 300px;
+                 margin-left: 20px;
+                 padding-top: 5px;
+                 display: flex;
+                justify-content: space-evenly;
+                 align-items: center;
+            }
+            .links{
+                margin-right: 20px;
+                display: flex;
+                float: right;
+                align-items: center;
             a{
-                padding: 50px 50px;
+                padding: 25px 25px;
                 font-size: 18px;
                 text-decoration: none;
-                font-family: PTBold;
-                color: #1B1212;
-                position: relative;
+                font-family: Qsand_M;
+                color: #fdfdfc;
+             
+                &:hover{
+                    color: #d50e16;
+                }
+    
+                &.active{
+                    background-color: #d50e16;
+                }
             }
+        }
+
 
             
-            a:after{
+         /*   a:after{
                 content: "";
                 position: absolute;
                 background-color: #AD974F;
@@ -44,22 +65,36 @@
             a:hover:after{
                 width: 80%;
             }
-
+*/  
         }
-    }
+    
 
     .info{
-        margin: 150px auto;
-        width: 900px;
+        margin: 200px 250px auto;
+        width: 1100px;
+        float: left;
+        text-align: left;
         font-size: 32px;
-        font-style: italic;
-        text-align: center;
-        
+        color: #fdfdfc;
+        font-family: Qsand_M;   
+
         h2{
-            color: #1B1212;
+            font-size: 75px;
             letter-spacing: 5px;
             word-spacing: 10px;
-            font-size: 60px;
+            font-family: Qsand_B;
+        }
+
+        p{
+            color: #d50e16;
+        }
+
+        img{
+            float: right;
+            margin: -300px 0;
+            width: 350px;
+            height: 375px;
+            border-radius: 20%;
         }
         
     }

@@ -1,63 +1,97 @@
 #cover {
-  height: 700px;
-  background-image: linear-gradient(rgba(210, 210, 210, 0.6), rgba(210, 210, 210, 0.6)), url(../img/laptop_hero.png);
+  height: 100%;
+  background-image: linear-gradient(rgb(41, 40, 43), rgb(41, 40, 43)), url(../img/halftone_pattern.avif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: LexReg;
 }
-#cover .nav-wrapper {
+#cover nav {
   display: flex;
-  justify-content: end;
-}
-#cover .nav-wrapper nav {
+  justify-content: space-between;
+  align-items: center;
   padding-top: 20px;
-  height: 50px;
+  height: 70px;
   width: auto;
+  /*   a:after{
+                  content: "";
+                  position: absolute;
+                  background-color: #AD974F;
+                  height: 3px;
+                  width: 0;
+                  left: 15px;
+                  bottom: 40px;
+                  transition: .5s;
+              }
+
+              a:hover{
+                  color: #AD974F;
+              }
+
+              a:hover:after{
+                  width: 80%;
+              }
+  */
 }
-#cover .nav-wrapper nav a {
-  padding: 50px 50px;
+#cover nav .logo {
+  height: 100%;
+  width: 300px;
+  margin-left: 20px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#cover nav .links {
+  margin-right: 20px;
+  display: flex;
+  float: right;
+  align-items: center;
+}
+#cover nav .links a {
+  padding: 25px 25px;
   font-size: 18px;
   text-decoration: none;
-  font-family: PTBold;
-  color: #1B1212;
-  position: relative;
+  font-family: Qsand_M;
+  color: #fdfdfc;
 }
-#cover .nav-wrapper nav a:after {
-  content: "";
-  position: absolute;
-  background-color: #AD974F;
-  height: 3px;
-  width: 0;
-  left: 15px;
-  bottom: 40px;
-  transition: 0.5s;
+#cover nav .links a:hover {
+  color: #d50e16;
 }
-#cover .nav-wrapper nav a:hover {
-  color: #AD974F;
-}
-#cover .nav-wrapper nav a:hover:after {
-  width: 80%;
+#cover nav .links a.active {
+  background-color: #d50e16;
 }
 #cover .info {
-  margin: 150px auto;
-  width: 900px;
+  margin: 200px 250px auto;
+  width: 1100px;
+  float: left;
+  text-align: left;
   font-size: 32px;
-  font-style: italic;
-  text-align: center;
+  color: #fdfdfc;
+  font-family: Qsand_M;
 }
 #cover .info h2 {
-  color: #1B1212;
+  font-size: 75px;
   letter-spacing: 5px;
   word-spacing: 10px;
-  font-size: 60px;
+  font-family: Qsand_B;
+}
+#cover .info p {
+  color: #d50e16;
+}
+#cover .info img {
+  float: right;
+  margin: -300px 0;
+  width: 350px;
+  height: 375px;
+  border-radius: 20%;
 }
 
 #content {
   height: 120%;
-  margin: 70px auto;
+  margin: 0px auto;
   text-align: center;
-  font-family: LexReg;
+  background-color: #28292b;
+  border-top: 1px dotted white;
 }
 #content h2 {
   font-size: 40px;
@@ -98,6 +132,7 @@
 
 html, body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -105,36 +140,39 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @font-face {
-  font-family: GillsBold;
-  src: url(../css/fonts/GillSansBold.otf);
+  font-family: Qsand_M;
+  src: url(../css/fonts/Quicksand-Medium.ttf);
 }
 @font-face {
-  font-family: PTBold;
-  src: url(../css/fonts/PTSerif-Bold.ttf);
+  font-family: Qsand_B;
+  src: url(../css/fonts/Quicksand-Bold.ttf);
 }
 @font-face {
-  font-family: PTReg;
-  src: url(../css/fonts/PTSerif-Regular.ttf);
+  font-family: Qsand_R;
+  src: url(../css/fonts/Quicksand-Regular.ttf);
 }
 @font-face {
-  font-family: LexReg;
-  src: url(../css/fonts/LexendDeca-Regular.ttf);
+  font-family: Qsand_M;
+  src: url(../css/fonts/Quicksand-Light.ttf);
 }
 #about {
-  font-family: LexReg;
-  height: 60%;
+  display: flex;
+  font-family: Qsand_M;
+  height: 80%;
   padding-top: 5px;
-  border-top: #AD974F dashed 3px;
+  border-top: 1px dotted #fdfdfc;
+  background-color: rgb(40, 41, 43);
 }
 #about img {
   height: 450px;
   width: 600px;
-  float: left;
   margin-top: 15px;
 }
 #about .aboutContent {
-  width: 900px;
-  float: right;
+  justify-content: flex-end;
+  width: 700px;
+  padding-left: 30px;
+  color: #fdfdfc;
 }
 #about .aboutContent h1 {
   padding-top: 40px;
@@ -162,6 +200,47 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 24px;
   padding: 10px 50px;
   color: white;
+}
+
+#skills {
+  height: 100%;
+  background-color: rgb(40, 41, 43);
+  border-top: 1px dotted white;
+  text-align: center;
+}
+#skills h1 {
+  font-family: Qsand_M;
+  color: #FDFDFC;
+  margin-top: 50px;
+}
+#skills .flex-container {
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  padding-top: 100px;
+  background-color: #28292b;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#skills .flex-container .icon-wrapper {
+  text-align: center;
+  width: 25%;
+  padding: 0.5rem;
+}
+#skills .flex-container .icon-wrapper .icon {
+  font-size: 56px;
+  color: #FDFDFC;
+}
+#skills .flex-container .icon-wrapper .icon-label {
+  color: #FDFDFC;
+  font-size: 10px;
+}
+#skills div:hover {
+  transform: scale(1.1);
+  transition: 1s ease;
 }
 
 /*# sourceMappingURL=styles.css.map */
