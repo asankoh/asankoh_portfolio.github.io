@@ -92,10 +92,21 @@
         img{
             float: right;
             margin: -300px 0;
-            width: 350px;
+            max-width: 350px;
             height: 375px;
             border-radius: 20%;
         }
         
     }
+}
+
+@media screen and (max-width: 768px){
+    #cover{ 
+    
+        .info{
+        margin-left: 50px;
+
+       
+    }
+}
 }

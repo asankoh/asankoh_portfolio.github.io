@@ -22,7 +22,7 @@
               <a href="#cover">Home</a>
               <a href="#about">About</a>
               <a href="#skills">Skills</a>
-              <a href="#content">Content</a>
+              <a href="#content">Projects</a>
               <a href="#contact">Contact</a>
             </div>
 
@@ -40,20 +40,17 @@
 
         
         <div id="about">
-          <img src="img/portfolio_hero_img.png" alt="What is this">
+          <img src="img/undraw_chilling_re_4iq9.svg" alt="What is this">
           <div class="aboutContent">
-            <h1>About Me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut officia, ullam dicta vitae magni, rem doloribus ex repellat eligendi veritatis fugiat eius explicabo eaque quaerat. A voluptas non sunt minus.
-            Veniam sunt laborum provident dolorem labore, vel beatae exercitationem qui molestias nobis deleniti velit sint ad, voluptatem sit fuga architecto ipsum quam assumenda ipsa numquam, ab consequatur. Minima, totam libero.
-            Modi, assumenda porro doloribus alias sapiente vero. Commodi placeat sequi mollitia corporis labore quidem culpa eos animi atque iusto quia, ad vitae minima illo voluptas enim sapiente, et dolore at!
-            Officia earum deserunt odit, harum nihil, necessitatibus perferendis iure aspernatur dicta quidem in nesciunt quam ad temporibus accusantium eum natus laudantium quae, nam repudiandae molestiae! Debitis voluptate doloremque facilis omnis!</p>
+            <h1>About Me:</h1>
+            <p>Hello, my name is Abdul Sankoh and I was born in Fort Sill, Oklahoma but lived in Fishers, Indiana for majority of my life. I am currently working on getting a bachelor's degree in Media Arts & Science with the specialization in Web Design and Development. My expertise lies in being able to create fully functional and responsive webpages by using HTML, CSS and Javascript. In my free time, I enjoy to watch the Premier League (Chelsea Fan!) and work on my fitness! </p>
           </div>
         </div>
 
         <div id="skills">
          
             <h1>Skills:</h1>
-            <p>The skills I used to </p>
+            <p>A variety of skills I'm capable of doing involving Front-End, Back-End and Frameworks.</p>
           
           <div class="flex-container" id="flexContainer"></div>
 
@@ -62,7 +59,7 @@
 
         <div id="content">
           <div class="header">
-            <h2>Portfolio</h2>
+            <h2>Projects:</h2>
             <p>Here is a few examples of my work: </p>
           </div>
           <div class="portfolio_content">
@@ -71,36 +68,86 @@
               <h3>Recipe Webpage</h3>
               <p>Created by using the following:</p>
               <ol>
-                <ul>- HTML</ul>
-                <ul>- CSS/SASS</ul>
-                <ul>- JavaScript/jQuery</ul>
+                <ul>HTML <span>&#10003;</span>
+                </ul>
+                <ul>CSS/SASS <span>&#10003;</span>
+                </ul>
+                <ul>JavaScript/jQuery <span>&#10003;</span>
+                </ul>
               </ol>
               <a href="https://in-info-web4.informatics.iupui.edu/~asankoh/jungleCook_newFinal/">
-              <button class="jungleCook_btn">View Webpage </button>
+                <div class="btnGroup">
+                  <button class="jungleCook_btn">Live Demo</button>
+                  <button class="jungleCook_btn">Github</button>
+                </div>
               </a>
             </div>
 
           </div>
           <div class="portfolio_content">
-            <div class="image"></div>
+            <div class="image"><img src="img/techworld.png" alt=""></div>
             <div class="text">
+              <h3>Computer E-Commerce Site</h3>
+              <p>Created by using the following:</p>
+              <ol>
+                <ul>HTML <span>&#10003;</span>
+                </ul>
+                <ul>CSS/SASS <span>&#10003;</span>
+                </ul>
+                <ul>JavaScript/jQuery <span>&#10003;</span>
+                </ul>
+                <ul>
+                  PHP <span>&#10003;</span>
+                </ul>
+                <ul>
+                  MySQL <span>&#10003;</span>
+                </ul>
+              </ol>
+              <a href="https://in-info-web4.informatics.iupui.edu/~asankoh/jungleCook_newFinal/">
+                <div class="btnGroup">
+                  <button class="jungleCook_btn">Live Demo</button>
+                  <button class="jungleCook_btn">Github</button>
+                </div>
+              </a>
           </div>
         </div>
 
-        <div id="contact">
-          <h2>Contact Me</h2>
-          <p>Feel free to contact me through email or on my socials below! The best way to email with me: abdulsankoh8dbz@gmail.com. Thanks for your time!</p>
-        </div>
+      </div>
+      
+      <div id="contact">
+        <div class="header">
+        <h2>Contact Me</h2>
+        <p>Feel free to contact me through email or on my socials below! The best way to email with me: abdulsankoh8dbz@gmail.com. Thanks for your time!</p>
+      </div>
 
-        <div id="footer">
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-twitter"></i>
-        </div>
-  
-    </div>
+      <form id="contact_form">
+      <div class="input-wrapper">
+        <input class="nameInput" type="text" placeholder="Name" required>
+        <input class="emailInput" type="email" placeholder="Email" required>
+      </div>
+
+      <div class="input-wrapper-two">
+        <input class="subjectInput" type="text" placeholder="Subject" required>
+      </div>
+
+      <div class="messageDiv">
+        <input class="messageBox" type="text" placeholder="Message" required>
+      </div>
+
+      <div class="contactBtn">
+        <input class="submitContact" type="submit" value="submit">
+      </div>
+      </div>
+    </form>
+      <div id="footer">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
 
     <script src="lib/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="app/app.js"></script>
 </body>
 </html>

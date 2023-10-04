@@ -10,12 +10,16 @@
             font-family: Qsand_M;
             color: #FDFDFC;
             margin-top: 50px;
+        }
 
+        p{
+            font-family: Qsand_M;
+            color: #FDFDFC;
         }
     
 
     .flex-container{
-        width: 1000px;
+        max-width: 1000px;
         height: 400px;
         display: flex;
         flex-wrap: wrap;
@@ -49,4 +53,12 @@
             transform: scale(1.1);
             transition: 1s ease;
         }
+    }
+
+    @media screen and (max-width: 768px) {
+        .flex-container{
+
+            
+        }
+
     }

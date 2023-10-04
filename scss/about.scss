@@ -5,9 +5,10 @@
     padding-top: 5px;
     border-top: 1px dotted #fdfdfc;
     background-color: rgb(40, 41, 43);
-
+    
 
     img{
+        padding-left: 50px;
         height: 450px;
         width: 600px;
         margin-top: 15px;
@@ -16,7 +17,8 @@
     .aboutContent{ 
         justify-content: flex-end;
         width: 700px;
-        padding-left: 30px;
+        padding-top: 50px;
+        padding-left: 100px;
         color: #fdfdfc;
 
         h1{
@@ -24,10 +26,28 @@
         }
         
         p{
-            padding-top: 50px;
+            max-width: 550px;
+            padding-top: 30px;
             line-height: 30px;
+            overflow: auto;
+
         }
 
         
     }
+}
+
+@media screen and (max-width: 1050px){
+
+    #about{
+
+        img{
+            width: 350px;
+            height: 450px;
+        }
+        .aboutContent{
+            overflow: hidden;
+        }
+    }
+    
 }
