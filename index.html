@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abdul Sankoh's Portfolio</title>
+    <link rel="website icon" type="png" href="img/Portfolio Logo.png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   </head>
   <body>
 
@@ -33,7 +35,7 @@
           <h3>Hi, my name is</h3>
           <h2>Abdul Sankoh</h2>
           <p>A Front-End Developer<p> 
-            <img src="img/Profile picture.png" alt="Me!">
+          <img src="img/Profile picture.png" alt="Me!">
         </div>    
         
         </div>
@@ -43,7 +45,11 @@
           <img src="img/undraw_chilling_re_4iq9.svg" alt="What is this">
           <div class="aboutContent">
             <h1>About Me:</h1>
-            <p>Hello, my name is Abdul Sankoh and I was born in Fort Sill, Oklahoma but lived in Fishers, Indiana for majority of my life. I am currently working on getting a bachelor's degree in Media Arts & Science with the specialization in Web Design and Development. My expertise lies in being able to create fully functional and responsive webpages by using HTML, CSS and Javascript. In my free time, I enjoy to watch the Premier League (Chelsea Fan!) and work on my fitness! </p>
+            <p>Hello, my name is Abdul Sankoh and I was born in Fort Sill, Oklahoma but lived in Fishers, Indiana for majority of my life. I am currently working on getting a bachelor's degree in Media Arts & Science with the specialization in Web Design and Development. My expertise lies in being able to create fully functional and responsive webpages by using HTML, CSS and Javascript. I always enjoy learning the vast knowledge of technology and enhancing on my coding skills day by day. In my free time, I enjoy watching the Premier League (Chelsea Fan!), playing on the piano and working on my fitness! </p>
+            <b>Check out my LinkedIn!</b>
+            <a href="https://www.linkedin.com/in/abdul-sankoh-b4689b1b9/" target="_blank"> 
+            <i class="fa-brands fa-linkedin"></i>
+            </a>
           </div>
         </div>
 
@@ -62,10 +68,33 @@
             <h2>Projects:</h2>
             <p>Here is a few examples of my work: </p>
           </div>
+
+          <div class="portfolio_content">
+            <div class="image"><img src="img/Loan-E_Image.png" alt=""></div>
+            <div class="text">
+              <h3>Loan Webpage Template</h3>
+              <p>Created by using the following:</p>
+              <ol>
+                <ul>HTML <span>&#10003;</span>
+                </ul>
+                <ul>CSS/S5ASS <span>&#10003;</span>
+                </ul>
+                <ul>JavaScript <span>&#10003;</span>
+                </ul>
+              </ol>
+              <div class="btnGroup">
+                  <a href="http://loanfirmloane.com/" target="_blank">
+                  <button class="jungleCook_btn">Live Demo</button>
+                </a>
+                  <button class="jungleCook_btn">Github</button>
+                </div>
+            </div>
+          </div>
+
           <div class="portfolio_content">
             <div class="image"><img src="img/jungle_cook.png" alt=""></div>
             <div class="text">
-              <h3>Recipe Webpage</h3>
+              <h3>Recipe Webpage Template</h3>
               <p>Created by using the following:</p>
               <ol>
                 <ul>HTML <span>&#10003;</span>
@@ -75,32 +104,32 @@
                 <ul>JavaScript/jQuery <span>&#10003;</span>
                 </ul>
               </ol>
-              <a href="https://in-info-web4.informatics.iupui.edu/~asankoh/jungleCook_newFinal/">
-                <div class="btnGroup">
+              <div class="btnGroup">
+                  <a href="http://junglecookrecipesite.com/" target="_blank">
                   <button class="jungleCook_btn">Live Demo</button>
+                </a>
                   <button class="jungleCook_btn">Github</button>
                 </div>
-              </a>
             </div>
-
           </div>
+
+      
           <div class="portfolio_content">
+             <div class="coming_soon_overlay">
+             <h2>Coming Soon</h2>
+             <p>Stay tuned for updates!</p>
+            </div>
             <div class="image"><img src="img/techworld.png" alt=""></div>
             <div class="text">
               <h3>Computer E-Commerce Site</h3>
               <p>Created by using the following:</p>
               <ol>
-                <ul>HTML <span>&#10003;</span>
-                </ul>
-                <ul>CSS/SASS <span>&#10003;</span>
+                <ul>HTML & CSS <span>&#10003;</span>
                 </ul>
                 <ul>JavaScript/jQuery <span>&#10003;</span>
                 </ul>
                 <ul>
-                  PHP <span>&#10003;</span>
-                </ul>
-                <ul>
-                  MySQL <span>&#10003;</span>
+                  PHP & MySQL<span>&#10003;</span>
                 </ul>
               </ol>
               <a href="https://in-info-web4.informatics.iupui.edu/~asankoh/jungleCook_newFinal/">
@@ -117,7 +146,7 @@
       <div id="contact">
         <div class="header">
         <h2>Contact Me</h2>
-        <p>Feel free to contact me through email or on my socials below! The best way to email with me: abdulsankoh8dbz@gmail.com. Thanks for your time!</p>
+        <p>Feel free to contact me by using the form below! Thanks for your time!</p>
       </div>
 
       <form id="contact_form">
@@ -135,15 +164,11 @@
       </div>
 
       <div class="contactBtn">
-        <input class="submitContact" type="submit" value="submit">
+        <input class="submitContact" type="submit" value="Submit">
       </div>
       </div>
     </form>
-      <div id="footer">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-      </div>
+     
 
     <script src="lib/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>

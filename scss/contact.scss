@@ -1,12 +1,17 @@
 #contact{
     height: 90%;
     padding-top: 20px;
-    
+    background-color: #28292b;
+    border-top: 1px dotted white;
+
+
 
 
     .header{
         text-align: center;
         font-family: Qsand_M;
+        color: #FDFDFC;
+
 
         h2{
             font-size: 40px;
@@ -20,21 +25,21 @@
         display: flex;
         margin: 50px auto;
         max-width: 50%;
-    
+        
         .emailInput, .nameInput {
             width: 50%;
+            border-radius: 8px;
             margin-right: 20px;
             padding: 10px;
             outline: none;
-            border: solid 2px #d50e16;
         }
     
          .subjectInput, .messageBox{
             margin-right: 20px;
+            border-radius: 8px;
             width: 100%;
             padding: 10px;
             outline: none;
-            border: solid 2px #d50e16;
         }
 
         

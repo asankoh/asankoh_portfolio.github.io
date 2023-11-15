@@ -1,5 +1,5 @@
 #content{
-    height: 120%;
+    height: 175%;
     margin: 0px auto;
     text-align: center;
     background-color: #28292b;
@@ -18,32 +18,68 @@
     }
 
     .portfolio_content{
+        position: relative;
         margin: 70px auto;
         max-width: 1100px;
         max-height: 400px;
         background-color: #FDFDFC;
-        box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
-        
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px; 
+    
+        .coming_soon_overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+            h2{
+                font-size: 40px;
+                font-family: Qsand_M;
+            }
+          }
+
         img{
         max-width: 500px;
         height: 300px;
         float: left;
+
+        
         }
 
         h3{
             padding-top: 20px;
         }
 
-        button{
-            height: 45px;
-            width: 100px;
-            margin: 30px;
-            border-radius: 43px;
-            color: black;
-            background-color: #d50e16;
-            box-shadow: 0px 7px rgb(0, 0, 0, 0.2);
-            cursor: pointer;
+        .btnGroup{
+
+            button{
+                height: 45px;
+                width: 90px;
+                margin: 30px;
+                border-radius: 4px;
+                color: black;
+                box-shadow: 0px 7px rgb(0, 0, 0, 0.2);
+                cursor: pointer;
+                background-color: red;
+
+
+            }
+
+            button:hover{
+                transition: all 2.3s ease; /* Adding a smooth transition for all properties */
+            background: linear-gradient(to right, #ff9a9e, #fecfef);
+            
+            }
+
         }
+         
+
         
         ol{
 
@@ -60,19 +96,20 @@
     }
 }
 
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 900px){
     #content{
 
     .portfolio_content{
-
         img{
             width: 350px;
         }
+        .btnGroup{
 
-        button{
-            width: 50px;
-            height: 40px;
-            margin:     px;
+            button{
+                width: 40px;
+                height: 40px;
+                font-size: 10px
+            }
         }
 
     

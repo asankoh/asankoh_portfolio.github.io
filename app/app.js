@@ -3,7 +3,7 @@ const iconsAndLabels = [
   { icon: 'devicon-css3-plain', label: 'CSS3' },
   { icon: 'devicon-javascript-plain', label: 'JavaScript' },
   { icon: 'devicon-php-plain', label: 'PHP' },
-  { icon: 'devicon-angularjs-plain', label: 'Angular' },
+  { icon: 'devicon-vuejs-plain', label: 'Vue' },
   { icon: 'devicon-jquery-plain-wordmark', label: 'jQuery' },
   { icon: 'devicon-mysql-plain-wordmark', label: 'mySQL' },
   { icon: 'devicon-sass-original', label: 'Sass' },

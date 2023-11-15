@@ -10,7 +10,7 @@
     img{
         padding-left: 50px;
         height: 450px;
-        width: 600px;
+        width: 500px;
         margin-top: 15px;
     }
 
@@ -26,11 +26,19 @@
         }
         
         p{
-            max-width: 550px;
+            max-width: 600px;
             padding-top: 30px;
             line-height: 30px;
             overflow: auto;
 
+        }
+
+        a{
+            i{
+                font-size: 24px;
+                padding-left: 15px;
+                color: #0077b5 ;
+            }
         }
 
         
