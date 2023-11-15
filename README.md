@@ -1,3 +1,2 @@
-# Portfolio
-
-https://in-info-web4.informatics.iupui.edu/~asankoh/Portfolio/
+Personal Portfolio:
+https://asankoh.github.io/asankoh_portfolio.github.io/
