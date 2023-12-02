@@ -10,7 +10,7 @@
     img{
         padding-left: 50px;
         height: 450px;
-        width: 500px;
+        max-width: 500px;
         margin-top: 15px;
     }
 
@@ -45,16 +45,35 @@
     }
 }
 
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1000px){
 
     #about{
+        display: block;
+        height: auto;
 
         img{
-            width: 350px;
-            height: 450px;
+            display: none;
+
         }
         .aboutContent{
             overflow: hidden;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+
+    #about{
+        display: block;
+        height: auto;
+        img{
+            display: none;
+        }
+        .aboutContent{
+            width: 350px;
+            font-size: 14px;
+            padding: 5px 15px;
         }
     }
     

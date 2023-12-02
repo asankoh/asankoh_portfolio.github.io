@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   </head>
-  <body>
+  <body style="background-color: rgb(40, 41, 43);">
 
    
 
@@ -20,13 +20,19 @@
               <div class="logo">
                 <a href="#cover"><img src="img/Portfolio Logo.png" alt=""> </a>
               </div>
+
+              <div class="openMenu"><i class="fa-solid fa-bars"></i></div>
               <div class="links">
               <a href="#cover">Home</a>
               <a href="#about">About</a>
               <a href="#skills">Skills</a>
               <a href="#content">Projects</a>
               <a href="#contact">Contact</a>
-            </div>
+
+              <div class="closeMenu"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+
+              </div>
+
 
             </nav>
       
@@ -38,11 +44,11 @@
           <img src="img/Profile picture.png" alt="Me!">
         </div>    
         
-        </div>
+    </div>
 
         
         <div id="about">
-          <img src="img/undraw_chilling_re_4iq9.svg" alt="What is this">
+          <img src="img/undraw_chilling_re_4iq9.svg" alt="">
           <div class="aboutContent">
             <h1>About Me:</h1>
             <p>Hello, my name is Abdul Sankoh and I was born in Fort Sill, Oklahoma but lived in Fishers, Indiana for majority of my life. I am currently working on getting a bachelor's degree in Media Arts & Science with the specialization in Web Design and Development. My expertise lies in being able to create fully functional and responsive webpages by using HTML, CSS and Javascript. I always enjoy learning the vast knowledge of technology and enhancing on my coding skills day by day. In my free time, I enjoy watching the Premier League (Chelsea Fan!), playing on the piano and working on my fitness! </p>
@@ -70,18 +76,10 @@
           </div>
 
           <div class="portfolio_content">
-            <div class="image"><img src="img/Loan-E_Image.png" alt=""></div>
+            <img src="img/Loan-E_Image.png" alt="">
             <div class="text">
               <h3>Loan Webpage Template</h3>
-              <p>Created by using the following:</p>
-              <ol>
-                <ul>HTML <span>&#10003;</span>
-                </ul>
-                <ul>CSS/S5ASS <span>&#10003;</span>
-                </ul>
-                <ul>JavaScript <span>&#10003;</span>
-                </ul>
-              </ol>
+              <p>Loan-E is a responsive loan firm template website that I created from scratch using the following Front-End tools: <b>HTML</b>, <b>CSS</b>, <b>SCSS</b> and <b>Javascript</b>. </p>
               <div class="btnGroup">
                   <a href="http://loanfirmloane.com/" target="_blank">
                   <button class="jungleCook_btn">Live Demo</button>
@@ -89,21 +87,24 @@
                   <button class="jungleCook_btn">Github</button>
                 </div>
             </div>
-          </div>
-
-          <div class="portfolio_content">
-            <div class="image"><img src="img/jungle_cook.png" alt=""></div>
-            <div class="text">
-              <h3>Recipe Webpage Template</h3>
-              <p>Created by using the following:</p>
-              <ol>
+              <!-- <p>Created by using the following tools:</p>
+            <ol>
                 <ul>HTML <span>&#10003;</span>
                 </ul>
                 <ul>CSS/SASS <span>&#10003;</span>
                 </ul>
-                <ul>JavaScript/jQuery <span>&#10003;</span>
+                <ul>JavaScript <span>&#10003;</span>
                 </ul>
-              </ol>
+              </ol>  -->
+          </div>
+
+          <div class="portfolio_content">
+            <div class="portfolio_image">
+            <img src="img/jungle_cook.png" alt="">
+          </div>
+            <div class="text">
+              <h3>Recipe Webpage Template</h3>
+              <p><p>Jungle Cook is a responsive recipe template website having login functionality. This was created by using the following Front-End tools: <b>HTML</b>, <b>CSS</b>, <b>SCSS</b> and <b>Javascript</b>. </p></p>
               <div class="btnGroup">
                   <a href="http://junglecookrecipesite.com/" target="_blank">
                   <button class="jungleCook_btn">Live Demo</button>
@@ -111,19 +112,32 @@
                   <button class="jungleCook_btn">Github</button>
                 </div>
             </div>
+              <!-- <ol>
+                <ul>HTML <span>&#10003;</span>
+                </ul>
+                <ul>CSS/SASS <span>&#10003;</span>
+                </ul>
+                <ul>JavaScript/jQuery <span>&#10003;</span>
+                </ul>
+              </ol> -->
           </div>
 
       
           <div class="portfolio_content">
              <div class="coming_soon_overlay">
-             <h2>Coming Soon</h2>
+             <h2 class="comingSoon_h2">Coming Soon</h2>
              <p>Stay tuned for updates!</p>
             </div>
-            <div class="image"><img src="img/techworld.png" alt=""></div>
+            <div class="portfolio_image"><img src="img/techworld.png" alt=""></div>
             <div class="text">
               <h3>Computer E-Commerce Site</h3>
-              <p>Created by using the following:</p>
-              <ol>
+              <p><p>TechWorld is a E-Commerce website that I created by using data from a MYSQL database to implement into a Front-End design. The following tools were used to create this website: <b>HTML</b>, <b>CSS</b>, <b>SCSS</b>, <b>PHP</b>, <b>MySQL</b> and <b>Javascript</b>. </p></p>
+              <div class="btnGroup">
+                <button class="jungleCook_btn">Live Demo</button>
+                <button class="jungleCook_btn">Github</button>
+              </div>
+            </div>
+              <!-- <ol>
                 <ul>HTML & CSS <span>&#10003;</span>
                 </ul>
                 <ul>JavaScript/jQuery <span>&#10003;</span>
@@ -131,14 +145,7 @@
                 <ul>
                   PHP & MySQL<span>&#10003;</span>
                 </ul>
-              </ol>
-              <a href="https://in-info-web4.informatics.iupui.edu/~asankoh/jungleCook_newFinal/">
-                <div class="btnGroup">
-                  <button class="jungleCook_btn">Live Demo</button>
-                  <button class="jungleCook_btn">Github</button>
-                </div>
-              </a>
-          </div>
+              </ol> -->
         </div>
 
       </div>
@@ -169,10 +176,10 @@
       </div>
     </form>
      
-
-    <script src="lib/jquery-3.6.1.min.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="lib/jquery-3.6.1.min.js"></script>
     <script src="app/app.js"></script>
 </body>
 </html>

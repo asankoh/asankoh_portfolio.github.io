@@ -1,3 +1,25 @@
+// JavaScript required for hamburger menu.
+const openMenu = document.querySelector('.openMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const links = document.querySelector('.links');
+
+openMenu.addEventListener('click', show)
+closeMenu.addEventListener('click', close)
+
+links.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', close);
+});
+
+function show(){
+  links.style.display = 'flex';
+  links.style.top = '0';
+  
+}
+
+function close(){
+  links.style.top = '-100%'
+}
+
 const iconsAndLabels = [
   { icon: 'devicon-html5-plain', label: 'HTML5' },
   { icon: 'devicon-css3-plain', label: 'CSS3' },
@@ -28,6 +50,11 @@ function iconsAndLabels_loop(){
     flexContainer.append(iconElement);
   });
 }
+
+
+
+/* `emailjs.init("7Sq14UgLg4xUzGRL-")` initializes the EmailJS library with the provided user ID. This
+user ID is used to authenticate and authorize the client to send emails using the EmailJS service. */
 
 emailjs.init("7Sq14UgLg4xUzGRL-")
 
@@ -91,4 +118,6 @@ $(document).ready(function() {
  $(document).ready(function () {
   iconsAndLabels_loop();
   sendEmail();
+  show()
+  close()
 });
