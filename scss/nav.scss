@@ -115,7 +115,10 @@
     #cover{
         .info{
             margin: 150px 75px;
-            font-size: 16px;
+
+            p{
+                font-size: 24px;
+            }
             img{
                 display: none;
             }

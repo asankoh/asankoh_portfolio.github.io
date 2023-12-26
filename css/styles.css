@@ -91,7 +91,9 @@
 @media only screen and (max-width: 1200px) {
   #cover .info {
     margin: 150px 75px;
-    font-size: 16px;
+  }
+  #cover .info p {
+    font-size: 24px;
   }
   #cover .info img {
     display: none;
@@ -131,8 +133,8 @@
 #content {
   height: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
   background-color: #28292b;
   border-top: 1px dotted white;
@@ -148,9 +150,9 @@
 }
 #content .portfolio_content {
   position: relative;
-  margin: 20px auto;
-  max-width: 450px;
-  height: 400px;
+  margin: 10px auto;
+  max-width: 425px;
+  height: 425px;
   background-color: #FDFDFC;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
@@ -182,6 +184,11 @@
 }
 #content .portfolio_content .text P {
   font-size: 14px;
+}
+#content .portfolio_content .text span {
+  padding-top: 5px;
+  font-size: 10px;
+  font-weight: bold;
 }
 #content .portfolio_content .text .btnGroup button {
   height: 40px;
@@ -315,16 +322,13 @@
   -ms-overflow-style: none;
 }
 
-*::-webkit-scrollbar {
-  display: none;
-}
-
 html, body {
   height: 100%;
   scroll-behavior: smooth;
   /*  background-image: url(../img/batthern.png);
     background-repeat: repeat; */
 }
+
 h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 16px;
 }
@@ -391,6 +395,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
   #about .aboutContent {
     overflow: hidden;
+    padding: 15px;
   }
 }
 @media screen and (max-width: 500px) {
