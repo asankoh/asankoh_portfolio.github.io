@@ -1,3 +1,10 @@
+//Website Loader
+window.addEventListener("load", function() {
+  // Hide the loader
+  var loader = document.getElementById("loader");
+  loader.style.display = "none";
+});
+
 // JavaScript required for hamburger menu.
 const openMenu = document.querySelector('.openMenu');
 const closeMenu = document.querySelector('.closeMenu');
@@ -23,12 +30,16 @@ function close(){
 const iconsAndLabels = [
   { icon: 'devicon-html5-plain', label: 'HTML5' },
   { icon: 'devicon-css3-plain', label: 'CSS3' },
-  { icon: 'devicon-javascript-plain', label: 'JavaScript' },
-  { icon: 'devicon-php-plain', label: 'PHP' },
-  { icon: 'devicon-vuejs-plain', label: 'Vue' },
-  { icon: 'devicon-jquery-plain-wordmark', label: 'jQuery' },
-  { icon: 'devicon-mysql-plain-wordmark', label: 'mySQL' },
   { icon: 'devicon-sass-original', label: 'Sass' },
+  { icon: 'devicon-bootstrap-plain', label: 'Bootstrap' },
+  { icon: 'devicon-wordpress-plain', label: 'WordPress'},
+  { icon: 'devicon-javascript-plain', label: 'JavaScript' },
+  { icon: 'devicon-jquery-plain-wordmark', label: 'jQuery' },
+  { icon: 'devicon-vuejs-plain', label: 'Vue' },
+  { icon: 'devicon-firebase-plain', label: 'Firebase' },
+  { icon: 'devicon-php-plain', label: 'PHP' },
+  { icon: 'devicon-mysql-plain-wordmark', label: 'MySQL' },
+
   // Add more entries as needed
 ];
 
@@ -62,23 +73,23 @@ $(document).ready(function() {
   $('.submitContact').click(function() {
     if (validateInputs()) {
       sendEmail();
-    } else {
-      Swal.fire(
-        'Input Error',
-        'Please fill in all the required fields.',
-        'error'
-      );
+    // } else {
+    //   Swal.fire(
+    //     'Input Error',
+    //     'Please fill in all the required fields.',
+    //     'error'
+    //   );
     }
   });
 
   function validateInputs() {
-    const name = $(".nameInput").val();
-    const email = $(".emailInput").val();
-    const subject = $(".subjectInput").val();
-    const message = $(".messageBox").val();
+    const name = $(".nameInput").val().trim();
+    const email = $(".emailInput").val().trim();
+    const subject = $(".subjectInput").val().trim();
+    const message = $(".messageBox").val().trim();
 
     // Check if any of the input fields is empty
-    if (name === "" || email === "" || subject === "" || message === "") {
+    if (name == "" || email == "" || subject == "" || message == "") {
       return false;
     }
     return true;
@@ -117,7 +128,9 @@ $(document).ready(function() {
 
  $(document).ready(function () {
   iconsAndLabels_loop();
-  sendEmail();
+  // sendEmail();
   show()
   close()
 });
+
+AOS.init();

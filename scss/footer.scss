@@ -1,11 +1,28 @@
-#footer{
-    background-color: black;
-    height: 40px;
+#footer {
+    height: 100%;
+    background-color: $site-black;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* Adjust 100px to your desired link width */
+    align-content: space-evenly;
+    place-items: center;
+    color: $site-white;
+}
 
-    i{
-        float: right;
-        font-size: 24px;
-        padding: 10px 50px;
-        color: white;
-    }
+.footer_links a {
+    text-decoration: none;
+    padding: 20px;
+    color: $site-white;
+}
+
+a:hover{
+    color:$site-red;
+}
+
+
+@media only screen and (max-width: 440px){
+ #footer{
+    font-size: 10px;
+    padding: 0;
+ }
 }

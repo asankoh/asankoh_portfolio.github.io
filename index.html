@@ -8,15 +8,17 @@
     <link rel="website icon" type="png" href="img/Portfolio Logo.png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   </head>
-  <body style="background-color: rgb(40, 41, 43);">
+  <body style="background-color: #f1f1f1;">
 
-   
+   <div id="loader">
+
+   </div>
 
     <div id="cover">
             <nav>
-
               <div class="logo">
                 <a href="#cover"><img src="img/Portfolio Logo.png" alt=""> </a>
               </div>
@@ -28,36 +30,37 @@
               <a href="#skills">Skills</a>
               <a href="#content">Projects</a>
               <a href="#contact">Contact</a>
-
               <div class="closeMenu"><i class="fa-sharp fa-solid fa-xmark"></i></div>
-
               </div>
-
-
             </nav>
-      
 
-        <div class="info">
-          <h3>Hi, my name is</h3>
-          <h2>Abdul Sankoh</h2>
-          <p>A Front-End Developer<p> 
-          <img src="img/Profile picture.png" alt="Me!">
-        </div>    
+        <div class="container">
+          <div data-aos="fade-right" class="info">
+            <h3>Hi, my name is</h3>
+            <h2>Abdul Sankoh</h2>
+            <p class="typing_title">A Web <span>Developer</span><p> 
+          </div>   
+          <div class="image_bg">
+            <img src="img/landing_image.png" alt="">
+          </div> 
+        </div>
         
     </div>
 
         
         <div id="about">
-          <img src="img/undraw_chilling_re_4iq9.svg" alt="">
+          <img src="img/about_me_image.jpg" alt="">
           <div class="aboutContent">
             <h1>About Me:</h1>
-            <p>Hello, my name is Abdul Sankoh and I was born in Fort Sill, Oklahoma but lived in Fishers, Indiana for majority of my life. I am currently working on getting a bachelor's degree in Media Arts & Science with the specialization in Web Design and Development. My expertise lies in being able to create fully functional and responsive webpages by using HTML, CSS and Javascript. I always enjoy learning the vast knowledge of technology and enhancing on my coding skills day by day. In my free time, I enjoy watching the Premier League (Chelsea Fan!), playing on the piano and working on my fitness! </p>
+            <p>Hello, my name is Abdul Sankoh and I was born in Fort Sill, Oklahoma but lived in Fishers, Indiana for majority of my life. I have earned myself a bachelor's degree in Media Arts & Science with the specialization in Web Design and Development at Indiana University Indianapolis. I am currently working on getting a bachelor's degree in Media Arts & Science with the specialization in Web Design and Development. My expertise lies in being able to create fully functional and responsive webpages by using HTML, CSS and Javascript. I always enjoy learning the vast knowledge of technology and enhancing on my coding skills day by day. In my free time, I enjoy watching the Premier League (Chelsea Fan!) &#9917;, playing on the piano  &#127929; and working on my fitness &#127947;! </p>
             <b>Check out my LinkedIn!</b>
-            <a href="https://www.linkedin.com/in/abdul-sankoh-b4689b1b9/" target="_blank"> 
+            <a href="https://www.linkedin.com/in/abdul-sankoh-kh2" target="_blank"> 
             <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
+
         </div>
+
 
         <div id="skills">
          
@@ -67,20 +70,21 @@
           <div class="flex-container" id="flexContainer"></div>
 
 
-        </div>
+        </div> 
 
         <div id="content">
           <div class="header">
-            <h2>Projects:</h2>
+            <h1>Projects:</h1>
             <p>Here is a few examples of my work: </p>
           </div>
 
-          
+          <div class="project_container">
           <div class="portfolio_content">
             <img src="img/Jagathon_Thumbnail.png" alt="">
             <div class="text">
               <h3>IUPUI's Jagathon Revamp Project</h3>
-              <p>This Jagathon Site project involved collaborating with a client to achieve their goals through IU's <b>WCMS</b>, including tasks like creating new banner images, incorporating active links with sponsor logos and much more! <span style="display: block;">(Credit to Partner: Logan Douglass)</span></p>
+              <!-- <p>This Jagathon Site project involved collaborating with a client to achieve their goals through IU's <b>WCMS</b>, including tasks like creating new banner images, incorporating active links with sponsor logos and much more! <span style="display: block;">(Credit to Partner: Logan Douglass)</span></p> -->
+              <p class="project_desc">This Jagathon project involved collaborating with a client to achieve their goals in creating new banner images, incorporating active links with sponsor logos and revising outdated content to help the organization raise money for Riley's Children Hospital! This application was revised through the use of IU's <b>WCMS</b>.</p>
               <div class="btnGroup">
                   <a href="https://sf.iupui.edu/jagathon/index.html" target="_blank">
                   <button class="jungleCook_btn">Live Demo</button>
@@ -89,14 +93,34 @@
             </div>
           </div>
 
+  
           <div class="portfolio_content">
-            <img src="img/Loan-E_Image.png" alt="">
+            <div class="portfolio_image">
+            <img src="img/jungle_cook.png" alt="">
+          </div>
             <div class="text">
-              <h3>Loan Webpage Template</h3>
-              <p>Loan-E is a loan firm template website that I created from scratch using the following Front-End tools: <b>HTML</b>, <b>CSS</b>, <b>SCSS</b> and <b>Javascript</b>. This application includes a responsive design, a functional loan calculator as well as the implementation of an API source.  </p>
+              <h3>Jungle Cook | Recipe CRUD Applcation</h3>
+              <p class="project_desc">Jungle Cook is a CRUD recipe application that allows users to discover new recipes on the application as well as create their own recipes. This application provides database intergation and a login system allowing for users to save recipes on their account. This was done using <b>HTML, SASS ,JavaScript, jQuery and Firebase</b>. </p>
               <div class="btnGroup">
-                  <a href="http://loanfirmloane.com/" target="_blank">
+                  <a href="https://jungle-cook-ff7.web.app/" target="_blank">
                   <button class="jungleCook_btn">Live Demo</button>
+                </a>
+                  <!-- <button class="jungleCook_btn">Github</button> -->
+                </div>
+            </div>
+          </div>
+        
+          <div class="portfolio_content">
+            <div class="portfolio_image">
+            <img src="img/oslin_screenshot.png" alt="">
+            </div>
+            <div class="text">
+              <!-- <h3>Organization of Sierra Leoneans in Indiana (OSLIN) Website </h3> -->
+              <h3>OSLIN | Non-Profit Website</h3>
+              <p class="project_desc">OSLIN is a non-profit organization that raises awareness within the communities in the state of Indiana. We help promote, fund and support sustainable projects to better and help the citizens of Sierra Leone. I serve as the website administrator, managing it with a <b>WCMS.</b> </p>
+              <div class="btnGroup">
+                  <a href="https://www.oslind.org/" target="_blank">
+                  <button >Live Demo</button>
                 </a>
                   <!-- <button class="jungleCook_btn">Github</button> -->
                 </div>
@@ -105,19 +129,39 @@
 
           <div class="portfolio_content">
             <div class="portfolio_image">
-            <img src="img/jungle_cook.png" alt="">
+            <img src="img/AbbaTech_Thumbnail.png" alt="">
           </div>
             <div class="text">
-              <h3>Recipe Webpage Template</h3>
-              <p>Jungle Cook is a recipe template website created for a class project by using the following Front-End tools: <b>HTML</b>, <b>CSS</b>, <b>SCSS</b> and <b>Javascript</b>. This application integrates a login system along with a responsive design.</p>
+              <h3>AbbaTech | Blog Application</h3>
+              <p class="project_desc">AbbaTech is a blog application that was created to showcase important programming concepts for users to learn. This application provides a secure login system, the abilty to access blogs and create comments. This was developed using <b>HTML, Bootstrap, PHP (CodeIgniter) and MySQL</b>.  </p>
               <div class="btnGroup">
-                  <a href="http://junglecookrecipesite.com/" target="_blank">
-                  <button class="jungleCook_btn">Live Demo</button>
+                  <a href="https://github.com/asankoh/AbbaTech_New" target="_blank">
+                  <button class="jungleCook_btn">Github</button>
                 </a>
                   <!-- <button class="jungleCook_btn">Github</button> -->
                 </div>
             </div>
           </div>
+          
+          
+            <div class="portfolio_content">
+              <div class="coming_soon_overlay">
+                <h2 class="comingSoon_h2">Coming Soon</h2>
+                <p>Stay tuned for updates!</p>
+              </div>
+            <img src="img/Loan-E_Image.png" alt="">
+            <div class="text">
+              <h3>Loan-E | Financial Management Webpage </h3>
+              <p class="project_desc">This application is a financial management template website to simulate the functionality of a real-world business application. This application allows the user to book an appointment with the financial advisors provided on the website. This application was done using <b>Wordpress, PHP and MySQL.</b></p>
+              <div class="btnGroup">
+                  <!-- <a href="http://loanfirmloane.com/" target="_blank">
+                  <button class="jungleCook_btn">Live Demo</button>
+                </a> -->
+                </div>
+            </div>
+          </div>
+          </div>
+       
 
       
           <!-- <div class="portfolio_content">
@@ -149,9 +193,9 @@
       
       <div id="contact">
         <div class="header">
-        <h2>Contact Me</h2>
+        <h1>Contact Me</h1>
         <p>Feel free to contact me by using the form below! Thanks for your time!</p>
-      </div>
+        </div>
 
       <form id="contact_form">
       <div class="input-wrapper">
@@ -172,10 +216,26 @@
       </div>
       </div>
     </form>
+
+    <footer>
+      <div id="footer">
+      <div class="footer_links">
+        <a href="#cover">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#content">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="copyright">
+        <p>Copyright @ 2024 All Rights Reserved by Abdul Sankoh</p>
+      </div>
+    </div>
+    </footer>
      
     
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="lib/jquery-3.6.1.min.js"></script>
     <script src="app/app.js"></script>
 </body>

@@ -1,32 +1,29 @@
 #skills{
     height: 100%;
-    background-color: rgb(40, 41, 43);
-    border-top: 1px dotted white;
+    background-color: #f1f1f1;
+    font-family: Qsand_M;
     text-align: center;
+    color: #121E27;
    
 
+    h1{
+        display: inline-block; /* Change display to inline-block */
+        margin-top: 50px;
+        background: linear-gradient(
+            to bottom,
+            transparent 60%, 
+            $site-red 80%
+        );
+    }
 
-        h1{
-            font-family: Qsand_M;
-            color: #FDFDFC;
-            margin-top: 50px;
-        }
-
-        p{
-            font-family: Qsand_M;
-            color: #FDFDFC;
-        }
-    
-
+     
     .flex-container{
-        max-width: 1000px;
-        height: 400px;
+        max-width: 1300px;
+        min-height: 550px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         margin: 50px auto;
         padding-top: 100px;
-        background-color: #28292b;
         border-radius: 10%;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -37,12 +34,13 @@
                 
         .icon{
             font-size: 56px;
-            color: #FDFDFC;
+            color: #121E27;
         }
 
         .icon-label{
-                color: #FDFDFC;
+                color: #121E27;
                 font-size: 10px;
+                font-weight: bold;
         }
         
         }  
