@@ -112,7 +112,7 @@ $(document).ready(function() {
         'You successfully sent an email!',
         'success'
       ).then(() =>{
-        window.location.hash = 'home'
+        window.location.hash = 'cover'
       });
       $(".nameInput").val("");
       $(".emailInput").val("");
