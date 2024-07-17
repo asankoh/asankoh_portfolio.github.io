@@ -6,18 +6,27 @@
   background-color: #121E27;
 }
 #cover nav {
+  max-width: 1400px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding-top: 20px;
+  margin: 0 auto;
 }
 #cover nav .logo {
-  max-width: 300px;
-  margin-left: 20px;
-  padding-top: 5px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  font-family: Qsand_B;
+}
+#cover nav .logo a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #D62027;
+  transition: color 0.5s ease-in-out;
+}
+#cover nav .logo a:hover {
+  color: #f1f1f1;
 }
 #cover nav .openMenu {
   font-size: 2rem;
@@ -40,7 +49,7 @@
   margin: 25px;
   font-size: 18px;
   text-decoration: none;
-  font-family: Qsand_M;
+  font-family: Qsand_R;
   color: #fdfdfc;
 }
 #cover nav .links a:after {
@@ -99,13 +108,44 @@
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   background-color: #172129;
   border-radius: 15%;
-  height: 600px;
+  height: 596px;
   margin-top: 40px;
   width: 405px;
   overflow: hidden;
 }
 #cover .container img {
   max-height: 90vh;
+}
+@keyframes colorChange {
+  0% {
+    color: #D62027;
+  }
+  100% {
+    color: #f1f1f1;
+  }
+}
+@keyframes scaleIcon {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#cover .scroll_button {
+  display: grid;
+  place-items: center;
+  margin-top: -75px;
+}
+#cover .scroll_button i {
+  color: #f1f1f1;
+  font-size: 24px;
+  cursor: pointer;
+  animation: scale(1.1);
+  animation: colorChange 3s infinite, scaleIcon 3s infinite;
 }
 
 @media only screen and (max-width: 1030px) {
@@ -171,6 +211,9 @@
   background-color: #f1f1f1;
   color: #121E27;
   font-family: Qsand_M;
+}
+#content .header {
+  font-family: Qsand_B;
 }
 #content .header h1 {
   display: inline-block; /* Change display to inline-block */
@@ -326,8 +369,8 @@ h1, h2, h3, h4, h5, h6, p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-  font-family: Qsand_M;
   height: 80%;
+  font-family: Qsand_R;
   background-color: #f1f1f1;
 }
 #about .aboutContent {
@@ -335,13 +378,13 @@ h1, h2, h3, h4, h5, h6, p {
   max-width: 550px;
 }
 #about .aboutContent h1 {
+  font-family: Qsand_B;
   width: max-content;
   background: linear-gradient(to bottom, transparent 60%, #D62027 80%);
 }
 #about .aboutContent p {
   max-width: 600px;
-  padding-top: 30px;
-  line-height: 30px;
+  line-height: 35px;
   overflow: auto;
 }
 #about .aboutContent a i {
@@ -355,7 +398,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 #about img {
   max-height: 450px;
-  max-width: 500px;
+  max-width: 600px;
   border-radius: 20px;
 }
 
@@ -389,10 +432,11 @@ h1, h2, h3, h4, h5, h6, p {
 #contact {
   padding: 100px 0;
   background-color: #f1f1f1;
-  font-family: Qsand_M;
+  font-family: Qsand_R;
   text-align: center;
 }
 #contact .header {
+  font-family: Qsand_B;
   color: #121E27;
 }
 #contact .header h1 {
@@ -450,7 +494,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #121E27;
   display: grid;
   grid-template-rows: 2fr 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* Adjust 100px to your desired link width */
+  grid-template-columns: repeat(auto-fit, minmax(1fr 1fr)); /* Adjust 100px to your desired link width */
   align-content: space-evenly;
   place-items: center;
   color: #f1f1f1;
@@ -460,6 +504,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-decoration: none;
   padding: 20px;
   color: #f1f1f1;
+  transition: color 0.5s ease-in-out;
 }
 
 a:hover {
@@ -475,7 +520,7 @@ a:hover {
 #skills {
   height: 100%;
   background-color: #f1f1f1;
-  font-family: Qsand_M;
+  font-family: Qsand_R;
   text-align: center;
   color: #121E27;
 }
@@ -483,6 +528,9 @@ a:hover {
   display: inline-block; /* Change display to inline-block */
   margin-top: 50px;
   background: linear-gradient(to bottom, transparent 60%, #D62027 80%);
+}
+#skills h1, #skills p {
+  font-family: Qsand_B;
 }
 #skills .flex-container {
   max-width: 1300px;
@@ -493,6 +541,7 @@ a:hover {
   padding-top: 100px;
   border-radius: 10%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 1s ease-in-out;
 }
 #skills .flex-container .icon-wrapper {
   text-align: center;
@@ -502,6 +551,7 @@ a:hover {
 #skills .flex-container .icon-wrapper .icon {
   font-size: 56px;
   color: #121E27;
+  transition: 1s ease-in-out;
 }
 #skills .flex-container .icon-wrapper .icon-label {
   color: #121E27;
@@ -510,7 +560,6 @@ a:hover {
 }
 #skills div:hover {
   transform: scale(1.1);
-  transition: 1s ease;
 }
 
 @media screen and (max-width: 950px) {

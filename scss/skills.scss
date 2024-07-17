@@ -1,7 +1,7 @@
 #skills{
     height: 100%;
     background-color: #f1f1f1;
-    font-family: Qsand_M;
+    font-family: Qsand_R;
     text-align: center;
     color: #121E27;
    
@@ -16,6 +16,10 @@
         );
     }
 
+    h1,p{
+        font-family: Qsand_B;
+    }
+
      
     .flex-container{
         max-width: 1300px;
@@ -26,6 +30,8 @@
         padding-top: 100px;
         border-radius: 10%;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: 1s ease-in-out;
+        
 
         .icon-wrapper{
             text-align: center;
@@ -35,6 +41,7 @@
         .icon{
             font-size: 56px;
             color: #121E27;
+            transition: 1s ease-in-out;
         }
 
         .icon-label{
@@ -49,7 +56,6 @@
 
         div:hover{
             transform: scale(1.1);
-            transition: 1s ease;
         }
     }
 

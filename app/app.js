@@ -111,7 +111,9 @@ $(document).ready(function() {
         'Thanks!',
         'You successfully sent an email!',
         'success'
-      );
+      ).then(() =>{
+        window.location.hash = 'home'
+      });
       $(".nameInput").val("");
       $(".emailInput").val("");
       $(".subjectInput").val("");
@@ -128,7 +130,6 @@ $(document).ready(function() {
 
  $(document).ready(function () {
   iconsAndLabels_loop();
-  // sendEmail();
   show()
   close()
 });

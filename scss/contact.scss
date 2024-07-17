@@ -1,10 +1,11 @@
 #contact{
     padding:100px 0;
     background-color: $site-white;
-    font-family: Qsand_M;
+    font-family: Qsand_R;
     text-align: center;
 
     .header{
+        font-family: Qsand_B;
         color: $site-black;
 
 
@@ -70,7 +71,6 @@
 
         .submitContact:hover{
             box-shadow: 0px 7px rgb(0, 0, 0, 0.2);
-
         }
 
 }
