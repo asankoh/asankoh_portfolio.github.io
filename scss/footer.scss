@@ -1,0 +1,30 @@
+#footer {
+    height: 100%;
+    background-color: $site-black;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(1fr 1fr)); /* Adjust 100px to your desired link width */
+    align-content: space-evenly;
+    place-items: center;
+    color: $site-white;
+}
+
+.footer_links a {
+    text-decoration: none;
+    padding: 20px;
+    color: $site-white;
+    transition: color .5s ease-in-out; 
+
+}
+
+a:hover{
+    color:$site-red;
+}
+
+
+@media only screen and (max-width: 440px){
+ #footer{
+    font-size: 10px;
+    padding: 0;
+ }
+}

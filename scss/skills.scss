@@ -1,0 +1,70 @@
+#skills{
+    height: 100%;
+    background-color: #f1f1f1;
+    font-family: Qsand_R;
+    text-align: center;
+    color: #121E27;
+   
+
+    h1{
+        display: inline-block; /* Change display to inline-block */
+        margin-top: 50px;
+        background: linear-gradient(
+            to bottom,
+            transparent 60%, 
+            $site-red 80%
+        );
+    }
+
+    h1,p{
+        font-family: Qsand_B;
+    }
+
+     
+    .flex-container{
+        max-width: 1300px;
+        min-height: 550px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px auto;
+        padding-top: 100px;
+        border-radius: 10%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: 1s ease-in-out;
+        
+
+        .icon-wrapper{
+            text-align: center;
+            width: 25%;
+            padding: 0.5rem;
+                
+        .icon{
+            font-size: 56px;
+            color: #121E27;
+            transition: 1s ease-in-out;
+        }
+
+        .icon-label{
+                color: #121E27;
+                font-size: 10px;
+                font-weight: bold;
+        }
+        
+        }  
+
+        }
+
+        div:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        #skills{
+            height: auto;
+        }
+        .flex-container{
+            
+        }
+
+    }
